@@ -1,0 +1,71 @@
+/* Styling for the landing/home page
+File : "/index.php" 
+*/
+
+#landing hr {
+    width: 70%;
+    border: .05em solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: black;
+}
+
+.container-landing {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b7/UC-Berkeley-020-evans-hall-college-of-engineering.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 4em;
+    width: 100%;
+    height: calc(100vh - 4em);
+    z-index:0;
+}
+
+.container-landing:after {
+    content: " ";
+    z-index: 10;
+    display: block;
+    position: absolute;
+    height: calc(100vh - 4em);
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255, 0.5);
+    padding-top: 4em;
+    z-index: 1;
+}
+
+#landing {
+    position: absolute;
+    font-size: 5em;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    width: 70%;
+    left: 50%;
+    top:50%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+    margin-left: -35%;
+    z-index: 2;
+    overflow-y: hidden;
+}
+
+/* Introduction styling */
+
+#introduction {
+    width: 100%;
+    padding-top: 4em;
+    min-height: calc(100vh - 4em);
+}
+
+#text {
+    padding-top: 3em;
+    width: 70%;
+    left: 50%;
+    margin-left: -35%;
+    padding-bottom: 9em; 
+}
