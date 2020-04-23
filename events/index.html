@@ -1,5 +1,9 @@
 <!-- DESCRIPTION:
-The landing/home page for the website.
+The events/calendar page
+-->
+
+<!-- TODO:
+redact api key for GitHub storing until we retrict key to only a certain domain 
 -->
 
 <!DOCTYPE HTML>
@@ -35,7 +39,7 @@ The landing/home page for the website.
 
 </head>
 <head>
-    <link rel = "stylesheet" type = "text/css" href = "landing.css">
+    <link rel = "stylesheet" type = "text/css" href = "events.css">
 </head>
 <body>
 <!-- JS for responsive nav-bar -->
@@ -63,44 +67,67 @@ The landing/home page for the website.
             <li><a href = "/resources" title="Go to the resources page"> RESOURCES </a></li>
         </ul>
     </nav>
-    <div class="container-landing">
-        <span id="landing"> 
-             STATISTICS UNDERGRADUATE STUDENT ASSOCIATION
-             <hr>
-             <a class="scroll" href = '#introduction'><i class="material-icons"style="font-size: 1.2em; color: black;">arrow_downward</i></a>
-        </span>
-        <!-- Script to keep constant text sizing 
-        Credit to: https://github.com/adactio/FitText.js
-        -->
-        <script src="/assets/scripts/fittext/fittext.js"></script>
-        <script type="text/javascript">
-            fitText(document.getElementById('landing'), 1.5)
-        </script>
-    </div>
-    <div id = "introduction"> 
-        <div id = "text">
-            <h1> Welcome to SUSA! </h1>
-            <p> SUSA is the Statistics Undergraduate Student Association at the University of California, Berkeley!
+    <div class = "info-container">
+        <div id = "info">
+            <h1>About our Events</h1>
+            <p>
+                SUSA will plan events throughout the semester to get students comfortable about statistics at Berkeley. Some of our planned events include speakers from our campus community (be it graduate students, professors, alumni, etc.), faculty lunches, course planning workshops, declaration workshops, and study halls. Out of these, our workshops and speaker series will typically include statistics department input and reviewed content.
             </p>
-            <p> 
-                We offer an all inclusive student association that strives to imrpove the quality of studying statistics as an undergraduate by providing open, accessible, and free resources and services to each and every member of the campus community. Every event is open to the entire Cal community, so we encourage you to come to our events!
+            <h2 style="margin-left: 50px">
+                Who can come?
+            </h2>
+            <p style="margin-left: 50px"> 
+                Anyone can come! <br>
+                As part of diversity and outreach, there are no restrictions on who can come to our events and there are <b>no fees</b> to attend. So please come and invite your friends while you're at it!
             </p>
-            <p> 
-                Our events will be held throughout the semester and details about current and past event schedules/materials can be found on the <a href="events/">events page</a>.
+            <h2 style="margin-left: 50px">
+                What can I expect from these events?
+            </h2>
+            <p style="margin-left: 50px"> 
+                A community of people that care for your academic success! <br>
+                You can use our various events to get close to professors and your advisors here at Cal; learn things about research, graduate school, and industry; and also build a new network of friends.
             </p>
             <p>
-                We also offer study guides for the introductory classes that students study for and other various resources to facilitate your statistics academic experience quality. These can be found on the <a href="resources/">resources page</a>.
+                We hope to see new faces and friends at our events!
             </p>
-            <p>
-                Our team consists of a president, treasurer, secretary, internal committee, and external commitee. You can find out more about our team on our <a href="team/">introduction to our team page</a>.
-            </p>
-            <h1>Who can join SUSA?</h1>
-            <p>
-                Anyone can join SUSA! There isn't a strong definition to being a member of SUSA, but membership is free and inclusive of all members of Cal. That being said, just join our mailing list to recieve updates on all the events or attend an event to get to know us first!
-            </p>
-            <p>
-                Obviously being a member isn't the same as being an officer of SUSA, so if you're interested in becoming an officer, you can find more on our <a href="team/">our team page</a>.
-            </p>
+            <h1>Upcoming Events</h1>
+            <p> You can find a list of non-recurring upcoming events below and plan accordingly. If you want to add a calendar to your own Google calendar collection, here is the <a href= "https://calendar.google.com/calendar/b/3?cid=ajM2cG9hNmxlbGNzZnBnY2FkZ3FrNGRqYm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">calendar</a>.</p>
+            <ol>
+                <li style = "list-style:'Xxx. 00 : '">
+                    FA20 Declaration Workshop
+                </li>
+            </ol>
+            <h1>Past Events</h1>
+            <p> You can find a list of our past events below and presentation material (most materials require you to sign into your UC Berkeley email) that came up during the event.</p>
+            <h2>Spring 2020</h2>
+            <ol id = "event-list">
+                <li style = "list-style:'Apr. 16 : '">
+                    FA20 Course Planning Workshop with collaboration from the Statistics Department
+                    <ul>
+                        <li>
+                            Recording: 
+                            <a href = "https://drive.google.com/open?id=1lIkZukvF33oM1_BYmuxLc2a87wnHCvUM">
+                                Video 
+                            </a>
+                        </li>
+                        <li>
+                            Slides: 
+                            <a href = "https://docs.google.com/presentation/d/15fLxBVprXseojEKqhmQwUisQHXD1UHiCueLQjdjra20"> 
+                                Google Slides
+                            </a>
+                        </li>
+                        <li>
+                            Chat Log:
+                            <a href = "https://drive.google.com/a/berkeley.edu/file/d/1pKiuaVWA1uWEjqdQN3skaIvT6oTo--4x">
+                                .TXT file
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li style = "list-style:'Mar. 02 : '">
+                    Study Hall
+                </li>
+            </ol>
         </div>
     </div>
 <footer class = "footer-container">
@@ -122,7 +149,7 @@ The landing/home page for the website.
                     <li class = "foot-link"><a href = "mailto:berkeley.susa@gmail.com" title="Send an email to our team!">Our Team</a></li>
                     <li class = "foot-link"><a href = "mailto:anavmittal@berkeley.edu" title="Send an email to our president!">President</a></li>
                     <li class = "foot-link"><a href = "mailto:edwardchang116@berkeley.edu" title="Send an email to our treasurer!">Treasurer</a></li>
-                    <li class = "foot-link"><a href = "mailto:emarzban@berkeley.edu" title="Send an email to our secretary!">Secretary</a></li>          
+                    <li class = "foot-link"><a href = "mailto:emarzban@berkeley.edu" title="Send an email to our secretary!">Secretary</a></li>            
                 </ul>
             </address>
             <div class = "column" id = "right">

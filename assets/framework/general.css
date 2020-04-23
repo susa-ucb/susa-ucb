@@ -1,0 +1,41 @@
+/* Styling for basic elements in every page
+Already included in the header declarations, so no need to reference to this file when making a page
+*/
+
+* {
+    position: relative
+}
+
+html {
+    min-width: 450px;
+    scroll-behavior: smooth;
+    height: auto;
+    margin: 0;
+}
+
+body {
+    height: auto;
+    margin : 0;
+    color: black;
+    font-size: 1.5 em;
+    font-family: 'Raleway';
+    /* IMPLEMENT WHEN WEBSITE FINISHED
+    overflow: hidden;
+    */
+}
+
+/*scrollbar stylings*/
+
+::-webkit-scrollbar{
+background: #fff;
+}
+::-webkit-scrollbar-track {
+background: none;
+background-color: #E0E0E0;
+}
+::-webkit-scrollbar-thumb {
+background: rgba(000, 000, 000, 0.7);
+}
+::-webkit-scrollbar-thumb:hover {
+background: #222;
+}

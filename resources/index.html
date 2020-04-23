@@ -1,6 +1,9 @@
 <!-- DESCRIPTION:
-The landing/home page for the website.
+The resources page
 -->
+
+<!-- Include Knitted Rmb files / pdfs / outside helpful links -->
+<!-- Try to implement a mySQL data base -->
 
 <!DOCTYPE HTML>
 <html lang = "en-US">
@@ -35,7 +38,7 @@ The landing/home page for the website.
 
 </head>
 <head>
-    <link rel = "stylesheet" type = "text/css" href = "landing.css">
+    <link rel = "stylesheet" type = "text/css" href = "resources.css">
 </head>
 <body>
 <!-- JS for responsive nav-bar -->
@@ -63,46 +66,112 @@ The landing/home page for the website.
             <li><a href = "/resources" title="Go to the resources page"> RESOURCES </a></li>
         </ul>
     </nav>
-    <div class="container-landing">
-        <span id="landing"> 
-             STATISTICS UNDERGRADUATE STUDENT ASSOCIATION
-             <hr>
-             <a class="scroll" href = '#introduction'><i class="material-icons"style="font-size: 1.2em; color: black;">arrow_downward</i></a>
-        </span>
-        <!-- Script to keep constant text sizing 
-        Credit to: https://github.com/adactio/FitText.js
-        -->
-        <script src="/assets/scripts/fittext/fittext.js"></script>
-        <script type="text/javascript">
-            fitText(document.getElementById('landing'), 1.5)
-        </script>
+<div class = "text-container">
+    <div id = "text">
+        <h1>Useful Links</h1>
+            <ul>
+                <li><h2><a href = "https://statistics.berkeley.edu">
+                    UC Berkeley Statistics Department
+                    </a></h2>
+                    <ul class = "link-list">
+                        <li>
+                            <a href= "https://statistics.berkeley.edu/programs/undergrad/major">
+                                Statistics Major
+                            </a>
+                        </li>
+                        <li>
+                            <a href= "https://statistics.berkeley.edu/programs/undergrad/minor">
+                                Statistics Minor
+                            </a>
+                        </li>
+                        <li>
+                            <a href= "https://statistics.berkeley.edu/programs/undergrad/major/faq#Honors">
+                                Honors
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://statistics.berkeley.edu/programs/undergrad/advising">
+                                Undergraduate Advising
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://statistics.berkeley.edu/programs/undergrad/resources">
+                                Resources
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://piazza.com/berkeley/other/stat001/home">
+                                STAT 001 Piazza (Platform to ask questions)
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><h2>Course Planning</h2>
+                    <ul class = "link-list">
+                    <li>
+                        Recording: 
+                        <a href = "https://drive.google.com/open?id=1lIkZukvF33oM1_BYmuxLc2a87wnHCvUM">
+                            Video 
+                        </a>
+                    </li>
+                    <li>
+                        Slides: 
+                        <a href = "https://docs.google.com/presentation/d/15fLxBVprXseojEKqhmQwUisQHXD1UHiCueLQjdjra20"> 
+                            Google Slides
+                        </a>
+                    </li>
+                    <li>
+                        Chat Log:
+                        <a href = "https://drive.google.com/a/berkeley.edu/file/d/1pKiuaVWA1uWEjqdQN3skaIvT6oTo--4x">
+                            .TXT file
+                        </a>
+                    </li>
+                    <li>
+                        STAT 001 Piazza: 
+                        <a href="https://piazza.com/class/jua820aaxcq1o6?cid=7">
+                        Stat 15x Spotlights
+                        </a>
+                    </li>
+                    </ul>
+                </li>
+            </ul>
+
+<h1> Courses</h1>
+                <ul>
+                    <li><h2>Stat 2/20/21</h2>
+                        <ul>
+                            <li>Resource 1</li>
+                            <li>Resource 2</li>
+                            <li>Resource 3</li>
+                            <li>Resource 4</li>
+                            <li>Resource 5</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><h2>Stat 134</h2>
+                        <ul>
+                            <li>Resource 1</li>
+                            <li>Resource 2</li>
+                            <li>Resource 3</li>
+                            <li>Resource 4</li>
+                            <li>Resource 5</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><h2>Stat 135</h2>
+                        <ul>
+                            <li>Resource 1</li>
+                            <li>Resource 2</li>
+                            <li>Resource 3</li>
+                            <li>Resource 4</li>
+                            <li>Resource 5</li>
+                        </ul>
+                    </li>
+                </ul>
     </div>
-    <div id = "introduction"> 
-        <div id = "text">
-            <h1> Welcome to SUSA! </h1>
-            <p> SUSA is the Statistics Undergraduate Student Association at the University of California, Berkeley!
-            </p>
-            <p> 
-                We offer an all inclusive student association that strives to imrpove the quality of studying statistics as an undergraduate by providing open, accessible, and free resources and services to each and every member of the campus community. Every event is open to the entire Cal community, so we encourage you to come to our events!
-            </p>
-            <p> 
-                Our events will be held throughout the semester and details about current and past event schedules/materials can be found on the <a href="events/">events page</a>.
-            </p>
-            <p>
-                We also offer study guides for the introductory classes that students study for and other various resources to facilitate your statistics academic experience quality. These can be found on the <a href="resources/">resources page</a>.
-            </p>
-            <p>
-                Our team consists of a president, treasurer, secretary, internal committee, and external commitee. You can find out more about our team on our <a href="team/">introduction to our team page</a>.
-            </p>
-            <h1>Who can join SUSA?</h1>
-            <p>
-                Anyone can join SUSA! There isn't a strong definition to being a member of SUSA, but membership is free and inclusive of all members of Cal. That being said, just join our mailing list to recieve updates on all the events or attend an event to get to know us first!
-            </p>
-            <p>
-                Obviously being a member isn't the same as being an officer of SUSA, so if you're interested in becoming an officer, you can find more on our <a href="team/">our team page</a>.
-            </p>
-        </div>
-    </div>
+</div>
 <footer class = "footer-container">
     <hr>
     <div id = "footer">
@@ -122,7 +191,7 @@ The landing/home page for the website.
                     <li class = "foot-link"><a href = "mailto:berkeley.susa@gmail.com" title="Send an email to our team!">Our Team</a></li>
                     <li class = "foot-link"><a href = "mailto:anavmittal@berkeley.edu" title="Send an email to our president!">President</a></li>
                     <li class = "foot-link"><a href = "mailto:edwardchang116@berkeley.edu" title="Send an email to our treasurer!">Treasurer</a></li>
-                    <li class = "foot-link"><a href = "mailto:emarzban@berkeley.edu" title="Send an email to our secretary!">Secretary</a></li>          
+                    <li class = "foot-link"><a href = "mailto:emarzban@berkeley.edu" title="Send an email to our secretary!">Secretary</a></li>                 
                 </ul>
             </address>
             <div class = "column" id = "right">

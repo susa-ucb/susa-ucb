@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+    <!--
+        Created by Edward Chang - 2020 Spring
+    -->
+    <title> SUSA </title>
+    <meta name = "description" content = "SUSA is the Statistics Undergraduate Student Organization sponsored by the UC Berkeley Statistics department.">
+    <meta charset = "UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Use fontawesome icons
+    TODO: Current website maintainer needs to register a new kit code -->
+    <script src="https://kit.fontawesome.com/89712f2394.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" type = "text/css" href = "/assets/framework/general.css">
+    <link rel = "stylesheet" type = "text/css" href = "/assets/framework/nav.css">
+    <link rel = "stylesheet" type = "text/css" href = "/assets/framework/footer.css">
+    <link rel = "icon" href = "/assets/images/susa-icon-196x196.png"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5"/>
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164308289-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164308289-1');
+</script>
+
+</head>
+<body>
+<!-- JS for responsive nav-bar -->
+    <script> 
+        function dropDown() {
+            var x = document.getElementById("bar");
+            if (x.className === "nav-bar") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-bar";
+            }
+        }
+    </script>
+    <nav class = "nav-bar" id = "bar">
+        <a class="logo" title="Return to the main page" href="/">
+            <img id="logo-before" src="/assets/images/susa_big_blue_alt.png" alt="SUSA Logo" style="height: 4em;">
+            <img id="logo-after" src="/assets/images/susa_big_blue_gold_alt.png" alt="SUSA Logo with area under normal curve highlighted" style="height: 4em;">
+        </a>
+        <a class = "nav-bar-toggle" href="javascript:void(0);" onclick="dropDown()">
+            <i class="fas fa-bars" style = "font-size: 3em; color: black;"></i>
+        </a>
+        <ul id = "nav-links">
+            <li><a href = "/team" title="Meet our team!">OUR TEAM</a></li>
+            <li><a href = "/events" title="Go to the events page"> EVENTS </a></li>
+            <li><a href = "/resources" title="Go to the resources page"> RESOURCES </a></li>
+        </ul>
+    </nav>
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "team.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+<div class = "text-container">
+<div class = "people-container">
+    <div id = "people">
+            <h1>Meet us!</h1>
+        <div id = "first-row">
+            <div class = "row-people">
+                <div class  = "column-people">
+                    <div>
+                        <h2 class = "name">Anav Mittal</h2>
+                        <h3 class = "role">President</h3>
+                        <div class = "intro-container"> 
+                            <p class = "intro">
+                            Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum dapibus tortor, a posuere sapien. Nullam sed neque elit. Aenean eleifend nulla dolor, in pulvinar urna efficitur nec. Nulla euismod tristique augue, et maximus dolor eleifend nec. Aliquam at justo ac turpis commodo finibus. In fringilla nunc eu justo posuere, sit amet accumsan tellus vulputate. Pellentesque quis diam et ante tincidunt blandit.
+                            </p>
+                            <ol class = "attributes">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </div>
+                        
+                        <img src = "/assets/portraits/Portrait_Placeholder.png" class = "portrait">   
+                        
+                    </div>
+                </div>
+                <div class  = "column-people">
+                    <div>
+                        <h2 class = "name">Edward Chang</h2>
+                        <h3 class = "role">Treasurer</h3>
+                        <div class = "intro-container"> 
+                            <p class = "intro">
+                            Hi! I'm currently a second year majoring in statistics. In my free time, I enjoy searching for new music, singing, playing TFT, and cooking. Feel free to talk to me about anything or hit me up if you wanna cook together (or do anything honestly)! <br> <br>I also developed this site, so I would be glad to discuss any changes that you might think would make it better or just talk about the choices that I made when creating it (I built it from scratch with almost no pre-existing resources).
+                            </p>
+                            <ol class = "attributes">
+                                <li>> summary(edward)</li>
+                                <li>Major: Statistics</li>
+                                <li>Year: Second</li>
+                                <li>From: Rosemead, CA</li>
+                                <li>Classes: CS 61B, Data 100, Math 110, Stat 135</li>
+                            </ol>
+                        </div>
+                        
+                        <img src = "/assets/portraits/Chang-Edward.jpg" class = "portrait">                    
+                    </div>
+                </div>
+                <div class  = "column-people">
+                    <div>
+                        <h2 class = "name">Ethan Marzban</h2>
+                        <h3 class = "role">Secretary</h3>
+                        <div class = "intro-container"> 
+                            <p class = "intro">
+                            Hi there! My name’s Ethan (he/him pronouns) and I’m a Senior who’s majoring in Statistics (with a cluster primarily in Math). In my free time I like playing the piano and composing, playing with cats (feel free to ask me about my cat, Kitty!), and working through Math/Stat problems (trust me- it’s a lot more fun than it sounds). Post-Berkeley I plan to pursue a PhD in Statistics, so you can probably tell that I’m quite passionate about the field!
+                            </p>
+                            <ol class = "attributes">
+                                <li>> summary(ethan)</li>
+                                <li>Major: Statistics</li>
+                                <li>Year: Fourth</li>
+                                <li>From: Seattle, WA</li>
+                                <li>Classes: Stat 153, Music 108, CS 61A</li>
+                            </ol>
+                        </div>
+                        
+                        <img src = "/assets/portraits/Marzban-Ethan.jpg" class = "portrait">     
+                        
+                    </div>
+                </div>
+                <div class  = "column-people">
+                    <div>
+                        <h2 class = "name">Star Li</h2>
+                        <h3 class = "role">Internal Committee</h3>
+                        <div class = "intro-container"> 
+                            <p class = "intro">
+                            Hello everyone, I'm a sophomore majoring in Stat and CS. I'm currently working on projects related to dimensionality reduction and high-dimensional data visualization. Other topics that interest me include stochastic process, sampling methods, and measure theory. In my spare time, I play the guitar and League.
+                            </p>
+                            <ol class = "attributes">
+                                <li>> summary(star)</li>
+                                <li>Major: Statistics &amp; Computer Science</li>
+                                <li>Year: Second</li>
+                                <li>From: Guangzhou, China</li>
+                                <li>Classes: Stat 150, CS 189, Data 100, Math 104</li>
+                            </ol>
+                        </div>
+
+                        <img src = "/assets/portraits/Li-Star.JPG" class = "portrait">  
+                        
+                    </div>
+                </div>
+                <div class  = "column-people">
+                    <div>
+                        <h2 class = "name">Hermish Mehta</h2>
+                        <h3 class = "role">Filler</h3>
+                        <div class = "intro-container"> 
+                            <p class = "intro">
+                            Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum dapibus tortor, a posuere sapien. Nullam sed neque elit. Aenean eleifend nulla dolor, in pulvinar urna efficitur nec. Nulla euismod tristique augue, et maximus dolor eleifend nec. Aliquam at justo ac turpis commodo finibus. In fringilla nunc eu justo posuere, sit amet accumsan tellus vulputate. Pellentesque quis diam et ante tincidunt blandit.
+                            </p>
+                            <ol class = "attributes">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </div>
+                        
+                        <img src = "/assets/portraits/Portrait_Placeholder.png" class = "portrait">   
+                                 
+                    </div>
+                </div>
+                <div class  = "column-people">
+                    <div>
+                        <h2 class = "name">Wayne Monical</h2>
+                        <h3 class = "role">Filler</h3>
+                        <div class = "intro-container"> 
+                            <p class = "intro">
+                            Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum dapibus tortor, a posuere sapien. Nullam sed neque elit. Aenean eleifend nulla dolor, in pulvinar urna efficitur nec. Nulla euismod tristique augue, et maximus dolor eleifend nec. Aliquam at justo ac turpis commodo finibus. In fringilla nunc eu justo posuere, sit amet accumsan tellus vulputate. Pellentesque quis diam et ante tincidunt blandit.
+                            </p>
+                            <ol class = "attributes">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </div>
+                        
+                        <img src = "/assets/portraits/Portrait_Placeholder.png" class = "portrait">   
+                                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id = "text">
+    <h1>About our team</h1>
+    <p>
+        We are a group of undergraduates interested in acting as outreach to all students in statistics. Our group consists of a president, treasurer, secretary, external committee, and internal committe. The website is maintained by anyone on our team.
+    </p>
+    <h1>Duties</h1>
+    <h2>President</h2>
+    <p>
+        The president oversees all activites within our organization and approves of all decisions sent in and out of the team.
+    </p>
+    <h2>Treasurer</h2>
+    <p>
+        The treasurer oversees all financial flow in the organization and is the medium for all of our financial activites. Budgeting and reimbursements are handled by the treasurer.
+    </p>
+    <h2>Secretary</h2>
+    <p>
+        The secretary keeps records of all meetings and enforces attendance within the team. In addition, proposals for events are also sent by the secretary to other parties.
+    </p>
+    <h2>External Committee</h2>
+    <p>
+        The external committee is in charge of planning and organizing events that relate to getting speakers and anything that involves parties outside of SUSA.
+    </p>
+    <h2>Internal Committee</h2>
+    <p>
+        The internal committee is in charge of planning and organizing events that relate directly to our community of undergraduates. Activities include planning for study halls, socials, and creating materials for classes.
+    </p>
+    <h1>How to join us?</h1>
+    <p>
+        To join our team of officers, please apply during one of our recruitment seasons! We will be recruiting at the start of the fall and winter semesters. As an expection to the start of our organization, we will also be holding recruitment around the end of this spring semester, so be on the lookout for it!
+    </p>
+</div>
+</div>
+<footer class = "footer-container">
+    <hr>
+    <div id = "footer">
+        <div class = "row" id = "top">
+            <div class = "column" id = "left">
+                <ul>
+                    <li><h2> Site map </h2></li>
+                    <li class = "foot-link"><a href = "/" title="Return to main page"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+                    <li class = "foot-link"><a href = "/team" title="Meet our team!"><i class="fas fa-users"></i>&nbsp;Our team</a></li>
+                    <li class = "foot-link"><a href = "/events" title="Go to the events page"><i class="fas fa-calendar-alt"></i>&nbsp;Events</a></li>
+                    <li class = "foot-link"><a href = "/resources" title="Go to the resources page"><i class="fas fa-folder"></i>&nbsp;Resources</a></li>
+                </ul>
+            </div>
+            <address class = "column" id = "middle">
+                <ul>
+                    <li><h2> Email </h2></li>
+                    <li class = "foot-link"><a href = "mailto:berkeley.susa@gmail.com" title="Send an email to our team!">Our Team</a></li>
+                    <li class = "foot-link"><a href = "mailto:anavmittal@berkeley.edu" title="Send an email to our president!">President</a></li>
+                    <li class = "foot-link"><a href = "mailto:edwardchang116@berkeley.edu" title="Send an email to our treasurer!">Treasurer</a></li>
+                    <li class = "foot-link"><a href = "mailto:emarzban@berkeley.edu" title="Send an email to our secretary!">Secretary</a></li>              
+                </ul>
+            </address>
+            <div class = "column" id = "right">
+                <ul>
+                    <li><h2>Follow Us!</h2></li>
+                    <li class = "foot-link"><a href="https://www.facebook.com/susa.berkeley/" title="Go to our Facebook page"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a></li>
+                    <li class = "foot-link"><a href="https://github.com/susa-ucb" title="Go to our GitHub Organization"><i class="fab fa-github-square"></i>&nbsp;GitHub</a></li>
+                    <!-- Omitted for non-OCF use
+                    <li class = "foot-link">                
+                        <span id = "ocf">
+                        <a href="https://www.ocf.berkeley.edu" title="Go to the OCF main page">
+                        <img src="/assets/images/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" style="border: 0;" alt = "OCF Logo"/>
+                        </a>
+                        </span>
+                    </li>
+                    -->
+                    <li>
+                    <img src = "/assets/images/susa-gold-blue.png" style = "width: 9em;">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class = "row" id = "bottom">
+            <p>
+                We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site. <br>
+                ©2020 The Statistics Undergraduate Student Association at Berkeley
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
