@@ -1,10 +1,11 @@
+
 <!DOCTYPE HTML>
 <html lang = "en-US">
 <head>
     <!--
         Created by Edward Chang - 2020 Spring
     -->
-    <title> SUSA </title>
+    <title>  Our Team | SUSA  </title>
     <meta name = "description" content = "SUSA is the Statistics Undergraduate Student Organization sponsored by the UC Berkeley Statistics department.">
     <meta charset = "UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -12,21 +13,37 @@
       rel="stylesheet">
     <!-- Use fontawesome icons
     TODO: Current website maintainer needs to register a new kit code -->
-    <script src="https://kit.fontawesome.com/89712f2394.js" crossorigin="anonymous"></script>
-    <link rel = "stylesheet" type = "text/css" href = "/assets/framework/general.css">
-    <link rel = "stylesheet" type = "text/css" href = "/assets/framework/nav.css">
-    <link rel = "stylesheet" type = "text/css" href = "/assets/framework/footer.css">
-    <link rel = "icon" href = "/assets/images/susa-icon-196x196.png">
+    <script defer src="/static/fa/js/all.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "/static/css/nav.css">
+    <link rel = "stylesheet" type = "text/css" href = "/static/css/footer.css">
+    <link rel = "stylesheet" type = "text/css" href = "/static/css/general.css">
+    
+<link rel="stylesheet" type="text/css" href="/static/css/team.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap">
+<script>
+    function pand(id) {
+        var container = document.getElementById("sum-contain-"+id)
+        var summary = document.getElementById("summarized-"+id);
+        if (summary.className === "summarized") {
+            summary.className += " visible";
+            container.className += " expanded";
+        } else {
+            summary.className = "summarized";
+            container.className = "summary-container";
+        }
+    }
+</script>
+
+    <link rel = "icon" href = "/static/images/susa-icon-196x196.png">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5"/>
     <meta http-equiv="Cache-Control" content="max-age=31536000">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164308289-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-164308289-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-164308289-1');
 </script>
 
 </head>
@@ -44,174 +61,237 @@
     </script>
     <nav class = "nav-bar" id = "bar">
         <a class="logo" title="Return to the main page" href="/">
-            <img id="logo-before" src="/assets/images/susa_big_blue_alt.png" alt="SUSA Logo" style="height: 4em;">
-            <img id="logo-after" src="/assets/images/susa_big_blue_gold_alt.png" alt="SUSA Logo with area under normal curve highlighted" style="height: 4em;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1198.97 740.85" id="logo">
+                <style type="text/css">
+                .logo-text{fill:#003262;}
+                </style>
+                <path class="logo-curve" d="M0,127.49C223.75,734.72,637.55,721.23,1197.83,735.87"/>
+                <path class="logo-curve" d="M34.73-176.49C181.3,824.49,269,735.18,1197.93,740.25"/>
+                <path class="logo-curve" d="M0,740.11c90.42-232,200.71-265.38,419.66-186,249.82,94.08,511.79,152.14,778.27,165.63"/>
+                <path class="logo-curve" d="M0,740.11c9.69-74,35.57-450.09,119.36-450.66,31.65,0,59.38,38.51,78.41,61.25,46.59,60.4,90.6,128.28,141.51,183.88C456.34,675.91,635.64,722.72,810.41,730.49c129.33,8.43,258.95,8.28,388.56,9.2"/>
+                <path class="logo-curve" d="M0,740.11c14.09-2,26.5-73.77,30.15-88.83C51.09,563.1,83,302.69,140.68,250.69c29.92-25.14,58.47,14.85,74.76,37.63C283.81,393.74,332.9,518.9,421.63,608.7,525,720.3,680.28,732.48,822.05,736.71c125.54,3.76,250.89,2.93,376.4,3.26"/>
+                <path class="logo-text" d="M1159.85,536.5c-17.31,0-15.31.5-21.5-14.6-7.55-18.43-15.27-36.8-22.42-55.38-2.56-6.65-6.23-9.52-13.5-9.49q-69.42.35-138.83,0c-7.33,0-10.94,2.9-13.59,9.42-8.22,20.23-17.29,40.13-25.29,60.45-3,7.69-7.6,10.43-15.34,9.68-3.5-.34-7.07,0-10.6-.09-7.45-.27-8.13-1.15-5.36-7.78q7.8-18.68,15.92-37.22Q948.22,402.25,987.17,313c9.38-21.49,19.06-42.86,28-64.52,3.54-8.58,8.43-12.26,18-12,21.69.67,17.12-.83,24.39,16.25,25.78,60.6,51.1,121.4,76.61,182.11,12.32,29.32,24.75,58.6,37,87.94,5.51,13.15,5.12,13.6-9.48,13.65ZM1033.52,431.62v0c19.61,0,39.23.13,58.84-.08,7-.07,7.86-1.63,5.69-8.34-.39-1.22-.9-2.41-1.4-3.59q-28.56-69.07-57.18-138.12c-1.16-2.79-1.22-7.39-5-7.45s-4,4.44-5.25,7.25q-29.55,69.17-59,138.41c-.5,1.18-1.12,2.32-1.54,3.53-2.11,6-1.11,7.69,4.94,8.3,2.23.22,4.5.12,6.75.12Z"/>
+                <path class="logo-text" d="M533,338.59q0,42.93,0,85.85a159.27,159.27,0,0,1-7.47,47.44c-12.64,40.73-48.1,67.42-90.76,68.11-13.15.22-26.36,1.09-39.43-1.61-33.72-7-57.27-26.37-70.8-57.92-6.15-14.32-9.14-29.42-10-44.95-3.5-63.93-.74-127.91-1.52-191.86-.13-10,1-10.88,11.2-10.94,19.17-.13,17.88-.71,17.88,17.8q0,74.76,0,149.51a250.46,250.46,0,0,0,4,47c4.2,22,13.22,41.5,32.23,55.18,10.61,7.64,22.62,10.7,35.17,12a94.88,94.88,0,0,0,32.58-2c22.67-5.56,37.65-20.22,47.12-40.76,8.08-17.51,10.59-36.32,10.61-55.46q.09-83.43,0-166.87c0-16.54,0-16.54,16.42-16.4,1.93,0,3.85.09,5.78.13,4.21.1,6.62,2.11,6.79,6.44.1,2.89.17,5.78.17,8.67q0,45.35,0,90.67Z"/>
+                <path class="logo-text" d="M62,312.82c-1.93,24.49,13.38,38.55,34,48.62,11.26,5.51,23.33,9.13,35.42,12.49,13.64,3.79,27.11,8,39.93,14.12,29.22,14,44.63,37,44.83,69.48.2,31.13-11.83,56.44-38.91,73-20.66,12.61-43.53,16.79-67.61,14.65C93.82,543.75,78.48,540.5,64,534a91.81,91.81,0,0,1-36.63-29c-4-5.32-3.87-6.1,1.53-9.94,5.23-3.73,10.58-7.32,16.06-10.67s6.22-3,10.39,2.07c1.83,2.23,3.54,4.56,5.38,6.79,22.07,26.8,66.43,31.81,95.46,15.84,22.12-12.17,33-34.48,28.65-59.17-2.56-14.62-11.41-24.88-24-32.06a142.06,142.06,0,0,0-24.64-10.93c-17.34-5.89-35-10.84-51.89-18-14.64-6.24-28.12-14.11-37.92-27.18-28.69-38.25-16.89-96.66,25-119.61,34-18.66,69.45-19.16,105.08-4.71a71.88,71.88,0,0,1,29.77,22.35c5.07,6.45,5,6.89-1.81,12-4.62,3.47-9.44,6.68-14.19,10-2.84,2-5.33,1.55-7.64-1a110.32,110.32,0,0,0-8.59-9.09c-15.37-13.73-33.8-18-53.76-16.28-8.94.76-17.79,2.48-26.13,6.27C75.7,270,60.07,286.57,62,312.82Z"/>
+                <path class="logo-text" d="M737.21,227.43c19.31.75,37.77,4.22,54.85,13.49a83,83,0,0,1,23,18.88c4.56,5.23,4.42,6.9-.76,11-4.27,3.4-8.72,6.6-13.28,9.58-5.76,3.77-6.52,3.87-11.33-1.57-22.88-25.88-51.44-28.54-82-18.87-38.95,12.33-43.28,50-32.87,74.74,4,9.48,12,15.8,20.36,21.32,11.67,7.7,24.85,12,38.12,15.9,16.64,4.91,33.16,9.84,49,17.28,55.78,26.23,49.67,96.93,22.41,125.75-21.22,22.44-47.62,30.91-77.31,30.61-21.38-.21-42.06-4.73-61.27-14.84-11.91-6.28-21.32-15.39-29.91-25.45-4-4.71-3.67-6.42,1.38-10.13,4.4-3.22,9-6.14,13.59-9.15,8.33-5.5,8.57-5.64,14.22,2.34,9.74,13.76,22.94,22.37,39,26.64,24.55,6.54,47.67,3.8,68.89-11.18,24.48-17.27,34.08-65.34-4.51-86.55-12.76-7-26.51-11.5-40.34-15.72-13.54-4.13-27-8.62-39.83-14.49-30.9-14.07-47.29-37.38-48.49-72.21-1.38-40.25,22.85-69.33,57.49-80.73C710.47,229.83,723.8,228,737.21,227.43Z"/>
+            </svg>
         </a>
         <a class = "nav-bar-toggle" href="javascript:void(0);" onclick="dropDown()">
-            <i class="fas fa-bars" style = "font-size: 3em; color: black;"></i>
+            <i class="fas fa-bars" style = "font-size: 2em; color: black;"></i>
         </a>
         <ul id = "nav-links">
-            <li><a href = "/team" title="Meet our team!">OUR TEAM</a></li>
-            <li><a href = "/events" title="Go to the events page"> EVENTS </a></li>
-            <li><a href = "/resources" title="Go to the resources page"> RESOURCES </a></li>
+            
+            <li>
+                <a href = "/team" class="nav-link" title="Meet our team!">
+                    OUR TEAM
+                </a>
+            </li>
+            <li>
+                <a href = "/events" class="nav-link" title="Go to the events page">
+                    EVENTS
+                </a>
+            </li>
+            <li>
+                <a href = "/resources" class="nav-link" title="Go to the resources page">
+                    RESOURCES
+                </a>
+            </li>
         </ul>
     </nav>
-<head>
-    <link rel = "stylesheet" type = "text/css" href = "team.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-</head>
-<div class = "text-container">
-<div class = "people-container">
-    <div id = "people">
+
+<div class="text-container">
+    <div class="people-container">
+        <div id="people">
             <h1>Meet us!</h1>
-        <div id = "first-row">
-            <div class = "row-people">
-                <div class  = "column-people">
+            <div class="people-array">
+            
+                <div class ="person">
                     <div>
-                        <h2 class = "name">Anav Mittal</h2>
-                        <h3 class = "role">President</h3>
-                        <div class = "intro-container">
-                            <p class = "intro">
-                            Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum dapibus tortor, a posuere sapien. Nullam sed neque elit. Aenean eleifend nulla dolor, in pulvinar urna efficitur nec. Nulla euismod tristique augue, et maximus dolor eleifend nec. Aliquam at justo ac turpis commodo finibus. In fringilla nunc eu justo posuere, sit amet accumsan tellus vulputate. Pellentesque quis diam et ante tincidunt blandit.
-                            </p>
-                            <ol class = "attributes">
+                        <h2 class="name">Anav Mittal</h2>
+                        <h3 class="role">President</h3>
+                        <div class="intro-container" style="
+                            background-image: url(/static/portraits/Portrait_Placeholder.png);
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;">
+                            <div class="intro">
+                            N/A
+                            </div>
+                        </div>
+                        <div class="summary-container" onclick="pand(1)" id="sum-contain-1">
+                            <ol class="attributes">
                                 <li>> summary(anav)</li>
-                                <li>nothing yet :(</li>
-                                <li></li>
-                                <li></li>
-                            </ol>
-                        </div>
-
-                        <img src = "/assets/portraits/Portrait_Placeholder.png" class = "portrait">
-
-                    </div>
-                </div>
-                <div class  = "column-people">
-                    <div>
-                        <h2 class = "name">Edward Chang</h2>
-                        <h3 class = "role">Treasurer</h3>
-                        <div class = "intro-container">
-                            <p class = "intro">
-                            Hi! I'm currently a second year majoring in statistics. In my free time, I enjoy searching for new music, singing, playing TFT, and cooking. Feel free to talk to me about anything or hit me up if you wanna cook together (or do anything honestly)! <br> <br>I also developed this site, so I would be glad to discuss any changes that you might think would make it better or just talk about the choices that I made when creating it.
-                            </p>
-                            <ol class = "attributes">
-                                <li>> summary(edward)</li>
-                                <li>Major: Statistics</li>
-                                <li>Year: Second</li>
-                                <li>From: Rosemead, CA</li>
-                                <li>Current Classes: CS 61B, Data 100, Math 110, Stat 135</li>
-                            </ol>
-                        </div>
-
-                        <img src = "/assets/portraits/Chang-Edward.jpg" class = "portrait">
-                    </div>
-                </div>
-                <div class  = "column-people">
-                    <div>
-                        <h2 class = "name">Ethan Marzban</h2>
-                        <h3 class = "role">Secretary</h3>
-                        <div class = "intro-container">
-                            <p class = "intro">
-                            Hi there! My name’s Ethan (he/him pronouns) and I’m a Senior who’s majoring in Statistics (with a cluster primarily in Math). In my free time I like playing the piano and composing, playing with cats (feel free to ask me about my cat, Kitty!), and working through Math/Stat problems (trust me- it’s a lot more fun than it sounds). In the Fall I’ll be heading to a PhD program in Statistics, so you can probably tell that I’m quite passionate about the field!
-                            <br>
-                            I also played a large part in the creation of study guide materials; please let me know if you find any mistakes, or if you have general comments about them!
-                            </p>
-                            <ol class = "attributes">
-                                <li>> summary(ethan)</li>
-                                <li>Major: Statistics</li>
+                                <span class="summarized" id="summarized-1">
+                                <li>Major: EECS, Business Administration, and Statistics</li>
                                 <li>Year: Fourth</li>
-                                <li>From: Seattle, WA</li>
-                                <li>Current Classes: Stat 153, Music 108, CS 61A</li>
+                                <li>From: N/A</li>
+                                <li>Current Classes: N/A</li>
+                                
+                                <li>Taken Classes: N/A</li>
+                                </span>
+                                
                             </ol>
                         </div>
-
-                        <img src = "/assets/portraits/Marzban-Ethan.jpg" class = "portrait">
-
                     </div>
                 </div>
-                <div class  = "column-people">
+            
+                <div class ="person">
                     <div>
-                        <h2 class = "name">Star Li</h2>
-                        <h3 class = "role">Internal</h3>
-                        <div class = "intro-container">
-                            <p class = "intro">
-                            Hello everyone, I'm a sophomore majoring in Stat and CS. I'm currently working on projects related to dimensionality reduction and high-dimensional data visualization. Other topics that interest me include stochastic process, sampling methods, and measure theory. In my spare time, I play the guitar and League.
-                            </p>
-                            <ol class = "attributes">
-                                <li>> summary(star)</li>
-                                <li>Major: Statistics &amp; Computer Science</li>
-                                <li>Year: Second</li>
-                                <li>From: Guangzhou, China</li>
-                                <li>Current Classes: Stat 150, CS 189, Data 100, Math 104</li>
-                            </ol>
+                        <h2 class="name">Edward Chang</h2>
+                        <h3 class="role">Treasurer</h3>
+                        <div class="intro-container" style="
+                            background-image: url(/static/portraits/Chang-Edward.jpg);
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;">
+                            <div class="intro">
+                            <p>Hi! I'm currently a second year majoring in statistics. In my free time, I enjoy searching for new music, singing, playing TFT, and cooking. Feel free to talk to me about anything or hit me up if you wanna cook together (or do anything honestly)! </p>
+<p> I also developed this site, so I would be glad to discuss any changes that you might think would make it better or just talk about the choices that I made when creating it.</p>
+                            </div>
                         </div>
-
-                        <img src = "/assets/portraits/Li-Star.JPG" class = "portrait">
-
-                    </div>
-                </div>
-                <div class  = "column-people">
-                    <div>
-                        <h2 class = "name">Hermish Mehta</h2>
-                        <h3 class = "role">External</h3>
-                        <div class = "intro-container">
-                            <p class = "intro">
-                            I'm Hermish, a Junior studying computer science and statistics, originally from Toronto. I am broadly interested in theoretical computer science, machine learning and, this quarantine season, making the perfect cold brew.
-                            </p>
-                            <ol class = "attributes">
-                                <li>> summary(hermish)</li>
-                                <li>Major: EECS</li>
+                        <div class="summary-container" onclick="pand(2)" id="sum-contain-2">
+                            <ol class="attributes">
+                                <li>> summary(edward)</li>
+                                <span class="summarized" id="summarized-2">
+                                <li>Major: Statistics</li>
                                 <li>Year: Third</li>
-                                <li>From: Toronto, ON</li>
-                                <li>Current Classes: Stat 151A, Stat 153</li>
+                                <li>From: Rosemead, CA</li>
+                                <li>Current Classes: Stat 151A, Math 151, Educ 130, Educ 150</li>
+                                
+                                <li>Taken Classes: Data 8, 100; Stat 20, 33B, 131A, 134, 135</li>
+                                </span>
+                                
                             </ol>
                         </div>
-
-                        <img src = "/assets/portraits/Mehta-Hermish.jpg" class = "portrait">
-
                     </div>
                 </div>
-                <div class  = "column-people">
+            
+                <div class ="person">
                     <div>
-                        <h2 class = "name">Wayne Monical</h2>
-                        <h3 class = "role">External and Internal</h3>
-                        <div class = "intro-container">
-                            <p class = "intro">
-                            Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum dapibus tortor, a posuere sapien. Nullam sed neque elit. Aenean eleifend nulla dolor, in pulvinar urna efficitur nec. Nulla euismod tristique augue, et maximus dolor eleifend nec. Aliquam at justo ac turpis commodo finibus. In fringilla nunc eu justo posuere, sit amet accumsan tellus vulputate. Pellentesque quis diam et ante tincidunt blandit.
-                            </p>
-                            <ol class = "attributes">
-                                <li>> summary(wayne)</li>
-                                <li>nothing yet :(</li>
-                                <li></li>
-                                <li></li>
+                        <h2 class="name">Star Li</h2>
+                        <h3 class="role">Internal</h3>
+                        <div class="intro-container" style="
+                            background-image: url(/static/portraits/Li-Star.JPG);
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;">
+                            <div class="intro">
+                            <p>Hello everyone, I'm a sophomore majoring in Stat and CS. I'm currently working on projects related to dimensionality reduction and high-dimensional data visualization. Other topics that interest me include stochastic process, sampling methods, and measure theory. In my spare time, I play the guitar and League.</p>
+                            </div>
+                        </div>
+                        <div class="summary-container" onclick="pand(3)" id="sum-contain-3">
+                            <ol class="attributes">
+                                <li>> summary(star)</li>
+                                <span class="summarized" id="summarized-3">
+                                <li>Major: Statistics and Computer Science</li>
+                                <li>Year: Third</li>
+                                <li>From: Guangzhou, China</li>
+                                <li>Current Classes: N/A</li>
+                                
+                                <li>Taken Classes: Stat 150, CS 189, Data 100, Math 104</li>
+                                </span>
+                                
                             </ol>
                         </div>
-
-                        <img src = "/assets/portraits/Portrait_Placeholder.png" class = "portrait">
-
                     </div>
                 </div>
+            
+                <div class ="person">
+                    <div>
+                        <h2 class="name">Hermish Mehta</h2>
+                        <h3 class="role">External</h3>
+                        <div class="intro-container" style="
+                            background-image: url(/static/portraits/Mehta-Hermish.jpg);
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;">
+                            <div class="intro">
+                            <p>I'm Hermish, a Junior studying computer science and statistics, originally from Toronto. I am broadly interested in theoretical computer science, machine learning and, this quarantine season, making the perfect cold brew.</p>
+                            </div>
+                        </div>
+                        <div class="summary-container" onclick="pand(4)" id="sum-contain-4">
+                            <ol class="attributes">
+                                <li>> summary(hermish)</li>
+                                <span class="summarized" id="summarized-4">
+                                <li>Major: EECS</li>
+                                <li>Year: Fourth</li>
+                                <li>From: Toronto, ON</li>
+                                <li>Current Classes: N/A</li>
+                                
+                                <li>Taken Classes: Stat 151A, Stat 153</li>
+                                </span>
+                                
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class ="person">
+                    <div>
+                        <h2 class="name">Wayne Monical</h2>
+                        <h3 class="role">External and Internal</h3>
+                        <div class="intro-container" style="
+                            background-image: url(/static/portraits/Portrait_Placeholder.png);
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;">
+                            <div class="intro">
+                            N/A
+                            </div>
+                        </div>
+                        <div class="summary-container" onclick="pand(5)" id="sum-contain-5">
+                            <ol class="attributes">
+                                <li>> summary(wayne)</li>
+                                <span class="summarized" id="summarized-5">
+                                <li>Major: N/A</li>
+                                <li>Year: N/A</li>
+                                <li>From: N/A</li>
+                                <li>Current Classes: N/A</li>
+                                
+                                <li>Taken Classes: N/A</li>
+                                </span>
+                                
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </div>
-</div>
-<div id = "text">
+<div id="text">
+    
     <h1>About our team</h1>
     <p>
-        We are a group of undergraduates interested in acting as outreach to all students in statistics. Our group consists of a president, treasurer, secretary, external committee, and internal committe. The website is maintained by anyone on our team.
+        We are a group of undergraduates interested in acting as outreach to all students in statistics. In addition to that, we also act as an additional resources for the Statistics Department to reach out to; we hold collaboration with the undergraduate advisors and professors to provide more to the statistics community. Our group consists of a president, treasurer, secretary, external committee, and internal committe.
     </p>
     <h1>Duties</h1>
     <h2>President</h2>
     <p>
-        The president oversees all activites within our organization and approves of all decisions sent in and out of the team.
+        The president oversees all activities within our organization and approves of all decisions sent in and out of the team.
     </p>
     <h2>Treasurer</h2>
     <p>
-        The treasurer oversees all financial flow in the organization and is the medium for all of our financial activites. Budgeting and reimbursements are handled by the treasurer.
+        The treasurer oversees all financial flow in the organization and is the medium for all of our financial activities. Budgeting and reimbursements are handled by the treasurer.
     </p>
     <h2>Secretary</h2>
     <p>
-        The secretary keeps records of all meetings and enforces attendance within the team. In addition, proposals for events are also sent by the secretary to other parties.
+        The secretary keeps records of all meetings and enforces attendance within the team. In general, the secretary streamlines communication between multiple aspects of our team.
     </p>
     <h2>External Committee</h2>
     <p>
@@ -221,15 +301,17 @@
     <p>
         The internal committee is in charge of planning and organizing events that relate directly to our community of undergraduates. Activities include planning for study halls, socials, and creating materials for classes.
     </p>
-    <h1>How to join us?</h1>
+
+        <h1>How to join us?</h1>
     <p>
         To join our team of officers, please apply during one of our recruitment seasons! We will be recruiting at the start of the fall and winter semesters. 
     </p>
     <p>
-        *Note: We previously said that there would be recruitment at the end of the Spring 2020 semester, but that is no longer the case. Stay tuned for more updates on our <a href="https://www.facebook.com/susa.berkeley/" title="Go to our Facebook page"><i class="fab fa-facebook-square"></i>&nbsp;Facebook Page</a>!
+        Applications will be open soon! Stay tuned for more updates on our <a href="https://www.facebook.com/susa.berkeley/" title="Go to our Facebook page"><i class="fab fa-facebook-square" aria-hidden="true"></i>&nbsp;Facebook Page</a>!
     </p>
 </div>
 </div>
+
 <footer class = "footer-container">
     <hr>
     <div id = "footer">
@@ -237,45 +319,68 @@
             <div class = "column" id = "left">
                 <ul>
                     <li><h2> Site map </h2></li>
-                    <li class = "foot-link"><a href = "/" title="Return to main page"><i class="fas fa-home"></i>&nbsp;Home</a></li>
-                    <li class = "foot-link"><a href = "/team" title="Meet our team!"><i class="fas fa-users"></i>&nbsp;Our team</a></li>
-                    <li class = "foot-link"><a href = "/events" title="Go to the events page"><i class="fas fa-calendar-alt"></i>&nbsp;Events</a></li>
-                    <li class = "foot-link"><a href = "/resources" title="Go to the resources page"><i class="fas fa-folder"></i>&nbsp;Resources</a></li>
+                    
+                    <li class = "foot-link">
+                        <a href = "/" title="Return to main page">
+                            <i class="fas fa-home"></i>&nbsp;Home
+                        </a>
+                    </li>
+                    <li class = "foot-link">
+                        <a href = "/team" title="Meet our team!">
+                            <i class="fas fa-users"></i>&nbsp;Our team
+                        </a>
+                    </li>
+                    <li class = "foot-link">
+                        <a href = "/events" title="Go to the events page">
+                            <i class="fas fa-calendar-alt"></i>&nbsp;Events
+                        </a>
+                    </li>
+                    <li class = "foot-link">
+                        <a href = "/resources" title="Go to the resources page">
+                            <i class="fas fa-folder"></i>&nbsp;Resources
+                        </a>
+                    </li>
                 </ul>
             </div>
             <address class = "column" id = "middle">
                 <ul>
                     <li><h2> Email </h2></li>
                     <li class = "foot-link"><a href = "mailto:berkeley.susa@gmail.com" title="Send an email to our team!">Our Team</a></li>
-                    <li class = "foot-link"><a href = "mailto:anavmittal@berkeley.edu" title="Send an email to our president!">President</a></li>
-                    <li class = "foot-link"><a href = "mailto:edwardchang116@berkeley.edu" title="Send an email to our treasurer!">Treasurer</a></li>
-                    <li class = "foot-link"><a href = "mailto:emarzban@berkeley.edu" title="Send an email to our secretary!">Secretary</a></li>
+                    
+                    <li class = "foot-link"><a href = "mailto:anavmittal@berkeley.edu" title="Send an email to our President!">President</a></li>
+                    
+                    <li class = "foot-link"><a href = "mailto:edwardchang116@berkeley.edu" title="Send an email to our Treasurer!">Treasurer</a></li>
+                    
                 </ul>
             </address>
             <div class = "column" id = "right">
                 <ul>
                     <li><h2>Follow Us!</h2></li>
-                    <li class = "foot-link"><a href="https://www.facebook.com/susa.berkeley/" title="Go to our Facebook page"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a></li>
-                    <li class = "foot-link"><a href="https://github.com/susa-ucb" title="Go to our GitHub Organization"><i class="fab fa-github-square"></i>&nbsp;GitHub</a></li>
-                    <!-- Omitted for non-OCF use
                     <li class = "foot-link">
-                        <span id = "ocf">
-                        <a href="https://www.ocf.berkeley.edu" title="Go to the OCF main page">
-                        <img src="/assets/images/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" style="border: 0;" alt = "OCF Logo"/>
+                        <a href="https://www.facebook.com/susa.berkeley/" title="Go to our Facebook page">
+                            <i class="fab fa-facebook-square"></i>&nbsp;Facebook
                         </a>
-                        </span>
                     </li>
-                    -->
-                    <li>
-                    <img src = "/assets/images/susa-gold-blue.png" style = "width: 9em;">
+                    <li class = "foot-link">
+                        <a href="https://github.com/susa-ucb" title="Go to our GitHub Organization">
+                            <i class="fab fa-github-square"></i>&nbsp;GitHub
+                        </a>
+                    </li>
+                    <li class = "foot-link">
+                        <a href="https://www.ocf.berkeley.edu" title="Go to the OCF main page">
+                            <img src="/static/images/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" style="border: 0;" alt = "OCF Logo"/>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class = "row" id = "bottom">
             <p>
-                We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site. <br>
-                ©2020 The Statistics Undergraduate Student Association at Berkeley
+                ©2020 Statistics Undergraduate Student Association. All Rights Reserved.
+            </p>
+            <p>
+                We are a student group acting independently of the University of California. <br>
+                We take full responsibility for our organization and this web site.
             </p>
         </div>
     </div>
