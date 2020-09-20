@@ -1,3 +1,3 @@
 # SUSA Website
 
-This is the temporary static website for the Statistics Undergraduate Student Association at UC Berkeley, the officially sponsored statistics undergraduate association by the Statistics Department.
+This website/repository will be taken down sometime in November.
